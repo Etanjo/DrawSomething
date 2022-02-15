@@ -252,4 +252,10 @@ window.addEventListener(
       }}
 )
 
-
+secretCode.addEventListener("change", function(event){
+  text = event.target.value
+  if(text == 'Clean'||(text = 'clean'))
+  { bgCanvas.style.backgroundImage = 'url("https://www.innovationcharter.org/wp-content/uploads/2016/08/Arnold-Erik-450x450.jpg")'
+   bgCanvas.style.backgroundSize = "cover" 
+  }
+})
