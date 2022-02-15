@@ -11,8 +11,6 @@ export let text;
 
 drawStartup()
 
-text = event.target.value
-
 export function clearLines(x = 1, y = 1){
   ctx.beginPath();
   ctx.lineWidth = 3
