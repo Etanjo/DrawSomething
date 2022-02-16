@@ -10,6 +10,9 @@ export let bgCanvas = document.createElement('canvas');
 app.appendChild(bgCanvas);
 app.appendChild(canvas);
 
+app.width = 700
+app.height = 700
+
 export let width = 700;
 export let height = 700;
 
