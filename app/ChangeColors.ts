@@ -1,4 +1,4 @@
- import {ctx, canvas, bgctx} from "./canvas"
+ import {ctx, canvas, bgctx, bgCanvas} from "./canvas"
 
 window.addEventListener(
   "keydown",

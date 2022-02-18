@@ -2,6 +2,7 @@ import {drawStartup} from "./StartupFunction"
 
 import {canvas, ctx, bgctx, bgCanvas, setupCanvas} from "./canvas";
 import { reset } from "colorette";
+import {drawTextBackground} from "./DrawingFunctions"
 
 let resetButton = document.querySelector("#reset");
 
@@ -109,6 +110,8 @@ resetButton.addEventListener(
       ctx.lineTo(48,663)
       ctx.strokeStyle = "#79c1e0"
       ctx.stroke()
+
+    bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
 
     setupCanvas(bgCanvas)
   }
@@ -254,24 +257,31 @@ window.addEventListener(
 
 function drawArnold(){bgCanvas.style.backgroundImage = 'url("https://www.innovationcharter.org/wp-content/uploads/2016/08/Arnold-Erik-450x450.jpg")'
    bgCanvas.style.backgroundSize = "cover" 
-   bgctx.beginPath
-   bgctx.strokeStyle = "white"
-   bgctx.fillStyle = "White"
-   bgctx.moveTo(0, 630)
-   bgctx.lineTo(700, 630)
-   bgctx.lineTo(700,700)
-   bgctx.lineTo(0,700)
-   bgctx.lineTo(0,640)
-   bgctx.fill()
-   bgctx.stroke()
-   }
+
+   drawTextBackground()
+}
   
 
 
 secretCode.addEventListener("change", function(event){
   text = event.target.value
-  if(text == 'Clean' || text == 'clean')
+  if(text == 'Clean' || text == 'clean' || text == 'CLEAN')
   { drawArnold()
+  }else{
+    bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
+  }
+})
+
+
+function drawDwayne(){bgCanvas.style.backgroundImage = 'url("https://i0.wp.com/www.valleycentral.com/wp-content/uploads/sites/39/2021/04/f026baa605674c8d92f28b0c1855cd8e.jpg?w=2000&ssl=1")'
+   bgCanvas.style.backgroundSize = "cover" 
+
+   drawTextBackground()
+}
+secretCode.addEventListener("change", function(event){
+  text = event.target.value
+  if(text == 'Dwayne' || text == 'dwayne' || text == 'DWAYNE')
+  { drawDwayne()
   }else{
     bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
   }

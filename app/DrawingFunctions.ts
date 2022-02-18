@@ -20,3 +20,14 @@ export function clearCanvas(x = 0,y = 0){
 
   bgctx.clearRect(0,0,700,700);
 }
+
+export function drawTextBackground(){
+  bgctx.beginPath()
+  bgctx.moveTo(0, 630)
+   bgctx.lineTo(700, 630)
+   bgctx.lineTo(700,700)
+   bgctx.lineTo(0,700)
+   bgctx.lineTo(0,640)
+   bgctx.fill()
+   bgctx.stroke()
+}

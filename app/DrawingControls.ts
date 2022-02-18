@@ -1,8 +1,9 @@
-import { drawCircle, clearCanvas } from "./DrawingFunctions"
-
-import { ctx, canvas, bgctx, app } from "./canvas"
+import { drawCircle, clearCanvas, drawTextBackground } from "./DrawingFunctions"
+import {text} from "./UI"
+import { ctx, canvas, bgctx, app, bgCanvas } from "./canvas"
 
 import "./ChangeColors"
+
 
 canvas.addEventListener(
   "mousemove",
@@ -19,8 +20,10 @@ window.addEventListener(
   function(event) {
     ;
     if (event.key == 'c') {
-      ;
       clearCanvas(0, 0);
+      if(text == 'clean' || text == 'Clean'){
+        drawTextbackground()
+      }
     };
   }
 );
