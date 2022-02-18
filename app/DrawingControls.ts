@@ -21,9 +21,7 @@ window.addEventListener(
     ;
     if (event.key == 'c') {
       clearCanvas(0, 0);
-      if(text == 'clean' || text == 'Clean'){
-        drawTextbackground()
+    drawTextBackground()
       }
-    };
-  }
+    }
 );
