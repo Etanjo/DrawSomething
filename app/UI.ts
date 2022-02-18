@@ -252,10 +252,27 @@ window.addEventListener(
       }}
 )
 
+function drawArnold(){bgCanvas.style.backgroundImage = 'url("https://www.innovationcharter.org/wp-content/uploads/2016/08/Arnold-Erik-450x450.jpg")'
+   bgCanvas.style.backgroundSize = "cover" 
+   bgctx.beginPath
+   bgctx.strokeStyle = "white"
+   bgctx.fillStyle = "White"
+   bgctx.moveTo(0, 630)
+   bgctx.lineTo(700, 630)
+   bgctx.lineTo(700,700)
+   bgctx.lineTo(0,700)
+   bgctx.lineTo(0,640)
+   bgctx.fill()
+   bgctx.stroke()
+   }
+  
+
+
 secretCode.addEventListener("change", function(event){
   text = event.target.value
-  if(text == 'Clean'||(text == 'clean'))
-  { bgCanvas.style.backgroundImage = 'url("https://www.innovationcharter.org/wp-content/uploads/2016/08/Arnold-Erik-450x450.jpg")'
-   bgCanvas.style.backgroundSize = "cover" 
+  if(text == 'Clean' || text == 'clean')
+  { drawArnold()
+  }else{
+    bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
   }
 })

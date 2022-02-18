@@ -15,9 +15,6 @@ app.appendChild(canvas);
 export let width = 700;
 export let height = 700;
 
-app.width = 700
-app.height = 700
-
 export function setupCanvas(canvas:HTMLCanvasElement){
 canvas.width = 700;
 canvas.height = 700;
