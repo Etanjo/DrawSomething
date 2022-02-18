@@ -273,7 +273,7 @@ secretCode.addEventListener("change", function(event){
 })
 
 
-function drawDwayne(){bgCanvas.style.backgroundImage = 'url("https://i0.wp.com/www.valleycentral.com/wp-content/uploads/sites/39/2021/04/f026baa605674c8d92f28b0c1855cd8e.jpg?w=2000&ssl=1")'
+function drawDwayne(){bgCanvas.style.backgroundImage = 'url("https://cdn.britannica.com/60/222660-050-064DBA89/Dwayne-Johnson-AKA-The-Rock-2019.jpg")'
    bgCanvas.style.backgroundSize = "cover" 
 
    drawTextBackground()
