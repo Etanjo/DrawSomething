@@ -260,18 +260,6 @@ function drawArnold(){bgCanvas.style.backgroundImage = 'url("https://www.innovat
 
    drawTextBackground()
 }
-  
-
-
-secretCode.addEventListener("change", function(event){
-  text = event.target.value
-  if(text == 'Clean' || text == 'clean' || text == 'CLEAN')
-  { drawArnold()
-  }else{
-    bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
-  }
-})
-
 
 function drawDwayne(){bgCanvas.style.backgroundImage = 'url("https://cdn.britannica.com/60/222660-050-064DBA89/Dwayne-Johnson-AKA-The-Rock-2019.jpg")'
    bgCanvas.style.backgroundSize = "cover" 
@@ -282,7 +270,10 @@ secretCode.addEventListener("change", function(event){
   text = event.target.value
   if(text == 'Dwayne' || text == 'dwayne' || text == 'DWAYNE')
   { drawDwayne()
-  }else{
+  } else if(text == 'Clean' || text == 'clean' || text == 'CLEAN')
+  { drawArnold()
+  }
+  else{
     bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
   }
 })
