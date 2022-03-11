@@ -21,6 +21,7 @@ window.addEventListener(
     ;
     if (event.key == 'c') {
       clearCanvas(0, 0);
+    
     drawTextBackground()
       }
     }

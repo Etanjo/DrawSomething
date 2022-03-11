@@ -23,6 +23,8 @@ export function clearCanvas(x = 0,y = 0){
 
 export function drawTextBackground(){
   bgctx.beginPath()
+  bgctx.fillStyle = "white"
+  bgctx.strokeStyle = "white"
   bgctx.moveTo(0, 630)
    bgctx.lineTo(700, 630)
    bgctx.lineTo(700,700)
