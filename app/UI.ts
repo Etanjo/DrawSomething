@@ -266,6 +266,12 @@ function drawDwayne(){bgCanvas.style.backgroundImage = 'url("https://cdn.britann
 
    drawTextBackground()
 }
+
+function drawJackson(){bgCanvas.style.backgroundImage = 'https://thebaldcompany.com/wp-content/uploads/2020/12/Samuel-Jackson-Famous-Bald-Men.jpg'
+  bgCanvas.style.backgroundSize = "cover"
+  drawTextBackground()
+}
+
 secretCode.addEventListener("change", function(event){
   text = event.target.value
   if(text == 'Dwayne' || text == 'dwayne' || text == 'DWAYNE')
@@ -273,7 +279,10 @@ secretCode.addEventListener("change", function(event){
   } else if(text == 'Clean' || text == 'clean' || text == 'CLEAN')
   { drawArnold()
   }
+    else if(text == 'Jackson' || text == 'jackson' || text == 'JACKSON'){
+    drawJackson()}
   else{
     bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
   }
+  
 })

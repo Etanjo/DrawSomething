@@ -29,3 +29,13 @@ canvas {
   left: 0;
   border: 3px solid black;  
 }
+header {
+font-family: Avenir, Helvetica, sans-serif;
+font-color: black;
+font-size: 30px;
+text-align: center;
+font-style: italic;
+}
+html {
+background-image: radial-gradient(circle, lightskyblue, LightBlue)
+}
