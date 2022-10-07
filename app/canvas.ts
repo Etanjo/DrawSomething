@@ -30,6 +30,7 @@ bgCanvas.style.backgroundColor = "White";
 canvas.style.position = 'absolute';
 canvas.style.top = '2px';
 canvas.style.left = '10px';
+  
 }
 
 setupCanvas(canvas);

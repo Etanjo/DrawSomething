@@ -2,7 +2,6 @@ import { drawCircle, clearCanvas, drawTextBackground } from "./DrawingFunctions"
 import {text} from "./UI"
 import { ctx, canvas, bgctx, app, bgCanvas } from "./canvas"
 
-import "./ChangeColors"
 
 
 canvas.addEventListener(
@@ -26,3 +25,11 @@ window.addEventListener(
       }
     }
 );
+canvas.addEventListener(
+  "touchmove",
+  function(event) {
+    let touch = event.touches[0]
+      drawCircle(
+        touch.pageX-canvas.offsetLeft,
+        touch.screenY-canvas.offsetTop);
+  });
