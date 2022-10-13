@@ -23,9 +23,9 @@ canvas.style.width = '700px';
 canvas.style.height = '700px';
 // Add a border to the canvas
 canvas.style.borderWidth = '3px';
-canvas.style.borderColor = 'Black';
+canvas.style.borderColor = 'black';
 canvas.style.borderStyle = 'solid';
-bgCanvas.style.backgroundColor = "White";
+bgCanvas.style.backgroundColor = "white";
 // Center the canvas horizontally
 canvas.style.position = 'absolute';
 canvas.style.top = '2px';
@@ -35,7 +35,6 @@ canvas.style.left = '10px';
 
 setupCanvas(canvas);
 setupCanvas(bgCanvas);
-bgCanvas.style.backgroundImage = 'url("https://htmlcolorcodes.com/assets/images/colors/white-color-solid-background-1920x1080.png")'
 export let ctx = canvas.getContext('2d');
 export let bgctx = bgCanvas.getContext('2d');
 

@@ -25,11 +25,11 @@ export function drawTextBackground(){
   bgctx.beginPath()
   bgctx.fillStyle = "white"
   bgctx.strokeStyle = "white"
-  bgctx.moveTo(0, 630)
+  bgctx.moveTo(600, 630)
    bgctx.lineTo(700, 630)
    bgctx.lineTo(700,700)
-   bgctx.lineTo(0,700)
-   bgctx.lineTo(0,640)
+   bgctx.lineTo(600,700)
+   bgctx.lineTo(600,640)
    bgctx.fill()
    bgctx.stroke()
 }

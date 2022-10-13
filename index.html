@@ -1,13 +1,9 @@
 <!DOCTYPE html>
 <header>IACS Draw</header>
-<label>
-  <input type="text" id="Secret-Code">
-</label>
+
 
 <html lang="en">
-  <button id="reset">
-    <a class="btn-large btn-info btn" style="width: 20%; background: #00000; color: #ffffff;" >Reset</a>
-</button>
+  
      
 
   <head>
@@ -17,10 +13,19 @@
   </head>
   <body>
     <div id="controls"></div>
+    <p>Secret Code:<input type="text" id="Secret-Code"></p>
+    <p>Completely Reset Canvas:<button id="reset"> <a class="btn-large btn-info btn" style="width:20%; background: #00000; color: #ffffff;" >Reset</a></button></p>
     <p>Change Color: <input type = "color" id = "color"></p>
+    <p>Fill Background: <button id ="fill">Fill</button></p>
+    <div id = "links">
+      <p><a href ="https://github.com/Etanjo/DrawSomething/commits/main">Patch Notes</a>
+        
+      </p>
+    </div>
     <div id="app">
       
     </div>
     <script type="module" src="/main.js"></script>
   </body>
+
 </html>

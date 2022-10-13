@@ -46,3 +46,10 @@ p{
   border-style: dashed;
   background-color: grey;
 }*/
+a {
+  color: yellow;
+}
+
+a:visited{
+  color: #ecec79;
+}

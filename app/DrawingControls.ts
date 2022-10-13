@@ -1,5 +1,5 @@
 import { drawCircle, clearCanvas, drawTextBackground } from "./DrawingFunctions"
-import {text} from "./UI"
+import {text, color} from "./UI"
 import { ctx, canvas, bgctx, app, bgCanvas } from "./canvas"
 
 
@@ -22,6 +22,8 @@ window.addEventListener(
       clearCanvas(0, 0);
     
     drawTextBackground()
+  bgctx.strokeStyle = event.target.value
+  bgctx.fillStyle = event.target.value
       }
     }
 );
